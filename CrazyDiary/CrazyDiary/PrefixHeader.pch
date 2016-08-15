@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  CrazyDiary
+//
+//  Created by ss-iOS-LLY on 16/8/15.
+//  Copyright © 2016年 lilianyou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CommonViewController.h"
+#import "BaseViewController.h"
+
+#endif /* PrefixHeader_pch */

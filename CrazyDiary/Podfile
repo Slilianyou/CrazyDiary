@@ -1,0 +1,8 @@
+platform:ios, ‘7.0’   
+
+target ‘CrazyDiary’ do
+
+pod 'AFNetworking'
+
+
+end

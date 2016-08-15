@@ -7,25 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B36C9131D61B65B005FC2E1 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36C9121D61B65B005FC2E1 /* CommonViewController.m */; };
+		7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36C9151D61B679005FC2E1 /* BaseViewController.m */; };
 		7BC6AEFC1D61A677005EE8FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AEFB1D61A677005EE8FB /* main.m */; };
 		7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AEFE1D61A677005EE8FB /* AppDelegate.m */; };
-		7BC6AF021D61A677005EE8FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AF011D61A677005EE8FB /* ViewController.m */; };
-		7BC6AF051D61A677005EE8FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6AF031D61A677005EE8FB /* Main.storyboard */; };
 		7BC6AF071D61A677005EE8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6AF061D61A677005EE8FB /* Assets.xcassets */; };
-		7BC6AF0A1D61A677005EE8FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6AF081D61A677005EE8FB /* LaunchScreen.storyboard */; };
+		A6B8298C1E475A1CC2711DC7 /* libPods-CrazyDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670C6A79B03524113760B72B /* libPods-CrazyDiary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		670C6A79B03524113760B72B /* libPods-CrazyDiary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrazyDiary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DABF513B22FFDC752DD497E /* Pods-CrazyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrazyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary.release.xcconfig"; sourceTree = "<group>"; };
+		7B36C9111D61B65B005FC2E1 /* CommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
+		7B36C9121D61B65B005FC2E1 /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		7B36C9141D61B679005FC2E1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7B36C9151D61B679005FC2E1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7B36C9171D61B7A9005FC2E1 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		7B36C9181D61B843005FC2E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7BC6AEF71D61A677005EE8FB /* CrazyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC6AEFB1D61A677005EE8FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BC6AEFD1D61A677005EE8FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BC6AEFE1D61A677005EE8FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7BC6AF001D61A677005EE8FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7BC6AF011D61A677005EE8FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7BC6AF041D61A677005EE8FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC6AF061D61A677005EE8FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7BC6AF091D61A677005EE8FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BC6AF0B1D61A677005EE8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92454E6435606E356A4589FE /* Pods-CrazyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrazyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B8298C1E475A1CC2711DC7 /* libPods-CrazyDiary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B36C9101D61B536005FC2E1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7B36C9111D61B65B005FC2E1 /* CommonViewController.h */,
+				7B36C9121D61B65B005FC2E1 /* CommonViewController.m */,
+				7B36C9141D61B679005FC2E1 /* BaseViewController.h */,
+				7B36C9151D61B679005FC2E1 /* BaseViewController.m */,
+				7B36C9171D61B7A9005FC2E1 /* Define.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7B36C9191D61BB8E005FC2E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				670C6A79B03524113760B72B /* libPods-CrazyDiary.a */,
+			);
+			name = Frameworks;
+			path = CrazyDiary;
+			sourceTree = "<group>";
+		};
+		7B36C91A1D61BBC1005FC2E1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		7BC6AEEE1D61A677005EE8FB = {
 			isa = PBXGroup;
 			children = (
 				7BC6AEF91D61A677005EE8FB /* CrazyDiary */,
+				7B36C9191D61BB8E005FC2E1 /* Frameworks */,
 				7BC6AEF81D61A677005EE8FB /* Products */,
+				CF1F98A33981019BC2501B6E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +94,11 @@
 		7BC6AEF91D61A677005EE8FB /* CrazyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				7B36C9101D61B536005FC2E1 /* Base */,
 				7BC6AEFD1D61A677005EE8FB /* AppDelegate.h */,
 				7BC6AEFE1D61A677005EE8FB /* AppDelegate.m */,
-				7BC6AF001D61A677005EE8FB /* ViewController.h */,
-				7BC6AF011D61A677005EE8FB /* ViewController.m */,
-				7BC6AF031D61A677005EE8FB /* Main.storyboard */,
-				7BC6AF061D61A677005EE8FB /* Assets.xcassets */,
-				7BC6AF081D61A677005EE8FB /* LaunchScreen.storyboard */,
-				7BC6AF0B1D61A677005EE8FB /* Info.plist */,
 				7BC6AEFA1D61A677005EE8FB /* Supporting Files */,
+				7B36C91A1D61BBC1005FC2E1 /* lib */,
 			);
 			path = CrazyDiary;
 			sourceTree = "<group>";
@@ -74,9 +106,21 @@
 		7BC6AEFA1D61A677005EE8FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BC6AF061D61A677005EE8FB /* Assets.xcassets */,
+				7BC6AF0B1D61A677005EE8FB /* Info.plist */,
 				7BC6AEFB1D61A677005EE8FB /* main.m */,
+				7B36C9181D61B843005FC2E1 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF1F98A33981019BC2501B6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92454E6435606E356A4589FE /* Pods-CrazyDiary.debug.xcconfig */,
+				6DABF513B22FFDC752DD497E /* Pods-CrazyDiary.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BC6AF0E1D61A677005EE8FB /* Build configuration list for PBXNativeTarget "CrazyDiary" */;
 			buildPhases = (
+				187AF5AEE4E15234DE49B247 /* [CP] Check Pods Manifest.lock */,
 				7BC6AEF31D61A677005EE8FB /* Sources */,
 				7BC6AEF41D61A677005EE8FB /* Frameworks */,
 				7BC6AEF51D61A677005EE8FB /* Resources */,
+				8F74BFB6176C9D01A5822F16 /* [CP] Embed Pods Frameworks */,
+				622B86E7651ACFA53D146192 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,45 +183,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC6AF0A1D61A677005EE8FB /* LaunchScreen.storyboard in Resources */,
 				7BC6AF071D61A677005EE8FB /* Assets.xcassets in Resources */,
-				7BC6AF051D61A677005EE8FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187AF5AEE4E15234DE49B247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		622B86E7651ACFA53D146192 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F74BFB6176C9D01A5822F16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BC6AEF31D61A677005EE8FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC6AF021D61A677005EE8FB /* ViewController.m in Sources */,
 				7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */,
+				7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */,
 				7BC6AEFC1D61A677005EE8FB /* main.m in Sources */,
+				7B36C9131D61B65B005FC2E1 /* CommonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7BC6AF031D61A677005EE8FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BC6AF041D61A677005EE8FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7BC6AF081D61A677005EE8FB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BC6AF091D61A677005EE8FB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7BC6AF0C1D61A677005EE8FB /* Debug */ = {
@@ -263,8 +338,10 @@
 		};
 		7BC6AF0F1D61A677005EE8FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92454E6435606E356A4589FE /* Pods-CrazyDiary.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = CrazyDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Crazy.ios.CrazyDiary;
@@ -274,8 +351,10 @@
 		};
 		7BC6AF101D61A677005EE8FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DABF513B22FFDC752DD497E /* Pods-CrazyDiary.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = CrazyDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Crazy.ios.CrazyDiary;
@@ -302,6 +381,7 @@
 				7BC6AF101D61A677005EE8FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

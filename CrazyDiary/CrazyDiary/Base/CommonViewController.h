@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CommonViewController.h
 //  CrazyDiary
 //
 //  Created by ss-iOS-LLY on 16/8/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CommonViewController : UIViewController
 
 @end
-
