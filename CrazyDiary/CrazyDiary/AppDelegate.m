@@ -20,9 +20,16 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    CommonViewController *board = [[CommonViewController alloc]init];
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:board];
-    self.window.rootViewController = navi;
+    
+    CommonViewController *commonVC = [[CommonViewController alloc]init];
+    UINavigationController *commonNavi = [[UINavigationController alloc]initWithRootViewController:commonVC];
+    
+    NSArray *titleArr = @[@"普通"];
+    SLLYMenuViewController *menuVC = [[SLLYMenuViewController alloc]initWithFrontView:commonNavi andButtonTitleArr:titleArr];
+    menuVC.viewControllersArr = @[commonNavi];
+    UINavigationController *menuNavi = [[UINavigationController alloc]initWithRootViewController:menuVC];
+    
+    self.window.rootViewController = menuNavi;
     [self.window makeKeyAndVisible];
   
     return YES;
