@@ -10,7 +10,11 @@
 typedef  void (^MenuButtonCallBack)(NSInteger index,NSString *title, NSInteger titleCounts);
 
 @interface SLLYMenuView : UIView
+
 @property (nonatomic, copy) MenuButtonCallBack  menuClickBlock;
+@property (nonatomic, assign) CGFloat menuButtonHeight;
+
+
 - (id)initWithTitles:(NSArray *)titles;
 - (id)initWithTitles:(NSArray *)titles withButtonHeight:(CGFloat)height withMenuColor:(UIColor *)menuColor withBackBlurStyle:(UIBlurEffectStyle)style;
 

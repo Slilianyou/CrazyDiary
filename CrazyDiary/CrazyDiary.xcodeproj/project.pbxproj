@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B36C9131D61B65B005FC2E1 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36C9121D61B65B005FC2E1 /* CommonViewController.m */; };
 		7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36C9151D61B679005FC2E1 /* BaseViewController.m */; };
+		7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9921AC1D66EAB2009FAE8C /* SLLYMenuButton.m */; };
 		7BC6AEFC1D61A677005EE8FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AEFB1D61A677005EE8FB /* main.m */; };
 		7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AEFE1D61A677005EE8FB /* AppDelegate.m */; };
 		7BC6AF071D61A677005EE8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6AF061D61A677005EE8FB /* Assets.xcassets */; };
@@ -27,6 +28,8 @@
 		7B36C9151D61B679005FC2E1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		7B36C9171D61B7A9005FC2E1 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		7B36C9181D61B843005FC2E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7B9921AB1D66EAB2009FAE8C /* SLLYMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLYMenuButton.h; sourceTree = "<group>"; };
+		7B9921AC1D66EAB2009FAE8C /* SLLYMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLYMenuButton.m; sourceTree = "<group>"; };
 		7BC6AEF71D61A677005EE8FB /* CrazyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC6AEFB1D61A677005EE8FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BC6AEFD1D61A677005EE8FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				7BEC0E6F1D62B1A9008C3D21 /* SLLYMenuViewController.m */,
 				7BEC0E711D62DC06008C3D21 /* SLLYMenuView.h */,
 				7BEC0E721D62DC06008C3D21 /* SLLYMenuView.m */,
+				7B9921AB1D66EAB2009FAE8C /* SLLYMenuButton.h */,
+				7B9921AC1D66EAB2009FAE8C /* SLLYMenuButton.m */,
 			);
 			path = "侧边栏";
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */,
 				7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */,
 				7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */,
 				7BC6AEFC1D61A677005EE8FB /* main.m in Sources */,
