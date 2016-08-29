@@ -15,7 +15,13 @@
 #import "CommonViewController.h"
 #import "BaseViewController.h"
 
+
 //utils
 #import "UIView+Frame.h"
+
+
+//VC
+#import "HealthViewController.h"
+#import "PPGViewController.h"
 
 #endif /* PrefixHeader_pch */

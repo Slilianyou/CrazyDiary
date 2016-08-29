@@ -1,22 +1,22 @@
 //
-//  CommonViewController.m
+//  HealthViewController.m
 //  CrazyDiary
 //
-//  Created by ss-iOS-LLY on 16/8/15.
+//  Created by ss-iOS-LLY on 16/8/24.
 //  Copyright © 2016年 lilianyou. All rights reserved.
 //
 
-#import "CommonViewController.h"
+#import "HealthViewController.h"
 
-@interface CommonViewController ()
+@interface HealthViewController ()
 
 @end
 
-@implementation CommonViewController
+@implementation HealthViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor =[UIColor redColor];
     // Do any additional setup after loading the view.
 }
 

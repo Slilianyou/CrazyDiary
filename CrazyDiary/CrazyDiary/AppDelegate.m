@@ -24,9 +24,15 @@
     CommonViewController *commonVC = [[CommonViewController alloc]init];
     UINavigationController *commonNavi = [[UINavigationController alloc]initWithRootViewController:commonVC];
     
-    NSArray *titleArr = @[@"普通"];
+    HealthViewController *healthVC = [[HealthViewController alloc]init];
+    UINavigationController *healthNavi = [[UINavigationController alloc]initWithRootViewController:healthVC];
+    
+    PPGViewController *ppGVC = [[PPGViewController alloc]init];
+    UINavigationController *ppGNavi = [[UINavigationController alloc]initWithRootViewController:ppGVC];
+    
+    NSArray *titleArr = @[@"普通",@"健康",@"测心跳"];
     SLLYMenuViewController *menuVC = [[SLLYMenuViewController alloc]initWithFrontView:commonNavi andButtonTitleArr:titleArr];
-    menuVC.viewControllersArr = @[commonNavi];
+    menuVC.viewControllersArr = @[commonNavi,healthNavi,ppGNavi];
     UINavigationController *menuNavi = [[UINavigationController alloc]initWithRootViewController:menuVC];
     
     self.window.rootViewController = menuNavi;

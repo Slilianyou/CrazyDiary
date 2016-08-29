@@ -32,7 +32,11 @@
 {
     return self.frame.origin.y;
 }
-
+//
+- (CGFloat)right
+{
+    return self.x + self.width;
+}
 - (void)setCenterX:(CGFloat)centerX
 {
     CGPoint center = self.center;
