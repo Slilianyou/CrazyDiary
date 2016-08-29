@@ -18,7 +18,7 @@
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) CALayer *imageLayer;
 @property (nonatomic, strong) NSMutableArray *points;
-@property (nonatomic, strong) UIView *showView;
+
 @end
 
 @implementation PPGViewController
@@ -51,8 +51,11 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"测试心跳💗";
     isShowRate = YES;
     [self setupAVCapture];
+    
+    
     // UI
     [self showHeartRate];
     
@@ -103,13 +106,13 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
 {
     [super viewWillDisappear: animated];
     [self stopAVCapture];
-    self.navigationController.navigationBarHidden = NO;
+    //    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    //    self.navigationController.navigationBarHidden = YES;
 }
 - (void)stopAVCapture
 {
@@ -181,11 +184,12 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
      */
     
     r /= 255 *(float)(width *height);
+    
     g /= 255 *(float)(width *height);
     b /= 255 *(float)(width *height);
     float h = 0.f, s = 0.f, v = 0.f;
     RGBtoHSV(r, g, b, &h, &s, &v);
-    
+    NSLog(@"r ----%f----\n----g---%f---\n -----b----%f----\n",r,g,b);
     // 用H值来作为特征值
     static float lastH = 0;
     float highPassValue = h -lastH;
@@ -214,9 +218,13 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
     if (_points.count) {
         [self render:context smoothBandpassItems:smoothBandpassItems];
     }
-    if (isShowRate && (smoothBandpassItems.count % FRAMES_PER_SECOND == 0) && smoothBandpassItems.count > 60 ) {
-        _rateLabel.text =[NSString stringWithFormat:@"%d",[self getHeartRateWithSmoothBandpassItems:smoothBandpassItems]];
+    if (r > 0.9f && g < 0.4 && b < 0.4 && isShowRate && (smoothBandpassItems.count % FRAMES_PER_SECOND == 0) ) {
+         int heartCount = [self getHeartRateWithSmoothBandpassItems:smoothBandpassItems];
+         // NSLog(@"heartCount--%d\n",heartCount);
+        NSDictionary *dict = @{@"heartCount":[NSString stringWithFormat:@"%d",heartCount]};
         
+        // 主线程刷新UI
+        [self performSelectorOnMainThread:@selector(addfResultViewWithDict:) withObject:dict waitUntilDone:YES] ;
     }
     
     
@@ -229,11 +237,18 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
     dispatch_async(dispatch_get_main_queue(), ^(void){
         [CATransaction setDisableActions:YES];
         [CATransaction begin];
-        _showView.layer.contents = renderImage;
+        _imageLayer.contents = renderImage;
         [CATransaction commit];
     });
 }
-
+- (void)addfResultViewWithDict:(NSDictionary *)dict
+{
+    _rateLabel.text =[dict objectForKey:@"heartCount"];
+}
+-(void)wwwww:(NSString *)str;
+{
+    _rateLabel.text = str;
+}
 // TODO:带通滤波
 - (NSMutableArray *)butterworthBandpassFilter:(NSArray *)inputData
 {
@@ -341,21 +356,17 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
 - (int)getHeartRateWithSmoothBandpassItems:(NSMutableArray *)smoothBandpassItems
 {
     float heartRate = 0.f;
-    if (smoothBandpassItems.count % FRAMES_PER_SECOND == 0) {
-        int peakCount = [self peakCount:smoothBandpassItems];
-        if (peakCount < 50) {
-            return 0;
-        }
-        float secondsPassed = smoothBandpassItems.count / FRAMES_PER_SECOND; // 每一帧每一秒的采集点数
-        float percentage = secondsPassed / 60; // 1/60s的采集点数
-        heartRate = peakCount / percentage; // 每分钟的峰值
-    }
-    isShowRate = NO;
+    int peakCount = [self peakCount:smoothBandpassItems];
+    float secondsPassed = smoothBandpassItems.count / FRAMES_PER_SECOND; // 每一帧每一秒的采集点数
+    float percentage = secondsPassed / 60; // 1/60s的采集点数
+    heartRate = peakCount / percentage; // 每分钟的峰值
+    
+//    isShowRate = NO;
     return  heartRate;
 }
 - (void)render:(CGContextRef)context smoothBandpassItems:(NSMutableArray *)smoothBandpassItems
 {
-    CGRect bounds = _showView.bounds;
+    CGRect bounds = _imageLayer.bounds;
     
     CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     CGContextSetLineWidth(context, 2);
@@ -390,24 +401,26 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
 #pragma mark --UI
 - (void)showHeartRate
 {
+    _imageLayer = [CALayer layer];
+    _imageLayer.frame = CGRectMake(0, 200, SCREENWIDTH, SCREENHEIGHT - 200);
+    [self.view.layer addSublayer:_imageLayer];
+    
     //
     UIView *upBackView = [[UIView alloc]initWithFrame:CGRectMake(0,64 , SCREENWIDTH, 136)];
     upBackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:upBackView];
     
-    UIImageView *heartImagView = [[UIImageView alloc]initWithFrame:CGRectMake(8, 8, 120, 120)];
+    UIImageView *heartImagView = [[UIImageView alloc]initWithFrame:CGRectMake(8, 18, 100, 100)];
     heartImagView.contentMode = UIViewContentModeScaleAspectFill;
     heartImagView.layer.contents = (id)[UIImage imageNamed:@"heart"].CGImage;
     [upBackView addSubview:heartImagView];
     
-    _rateLabel = [[UILabel alloc]initWithFrame:CGRectMake(heartImagView.right + 5, heartImagView.y +10, SCREENWIDTH - 10 - heartImagView.right, 50)];
-    _rateLabel.textColor = [UIColor blueColor];
-    _rateLabel.backgroundColor = [UIColor orangeColor];
+    _rateLabel = [[UILabel alloc]initWithFrame:CGRectMake(heartImagView.right + 10, heartImagView.y +30, SCREENWIDTH - 10 - heartImagView.right, 50)];
+    _rateLabel.textColor = [UIColor whiteColor];
+    _rateLabel.text = @"afsagfasgas";
+    _rateLabel.backgroundColor = [UIColor blackColor];
     [upBackView addSubview:_rateLabel];
     
-   _showView = [[UIView alloc]initWithFrame:CGRectMake(0,64 , SCREENWIDTH, SCREENHEIGHT - 64)];
-    
-    [self.view addSubview:_showView];
 }
 
 @end

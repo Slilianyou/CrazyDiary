@@ -41,8 +41,8 @@
 		7B36C9151D61B679005FC2E1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		7B36C9171D61B7A9005FC2E1 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		7B36C9181D61B843005FC2E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		7B4839881D6E8BA900A6036A /* PPGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGViewController.h; sourceTree = "<group>"; };
-		7B4839891D6E8BA900A6036A /* PPGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGViewController.m; sourceTree = "<group>"; };
+		7B4839881D6E8BA900A6036A /* PPGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPGViewController.h; path = CrazyDiary/health/PPGViewController.h; sourceTree = SOURCE_ROOT; };
+		7B4839891D6E8BA900A6036A /* PPGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPGViewController.m; path = CrazyDiary/health/PPGViewController.m; sourceTree = SOURCE_ROOT; };
 		7B48398B1D6E8EF600A6036A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7B9921AB1D66EAB2009FAE8C /* SLLYMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLYMenuButton.h; sourceTree = "<group>"; };
 		7B9921AC1D66EAB2009FAE8C /* SLLYMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLYMenuButton.m; sourceTree = "<group>"; };
@@ -98,10 +98,9 @@
 		7B367F831D6DA134004F276B /* health */ = {
 			isa = PBXGroup;
 			children = (
+				7B4AEA041D73D19F00776AC3 /* PPG */,
 				7B367F841D6DA16B004F276B /* HealthViewController.h */,
 				7B367F851D6DA16B004F276B /* HealthViewController.m */,
-				7B4839881D6E8BA900A6036A /* PPGViewController.h */,
-				7B4839891D6E8BA900A6036A /* PPGViewController.m */,
 			);
 			path = health;
 			sourceTree = "<group>";
@@ -135,6 +134,39 @@
 			children = (
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		7B4AEA041D73D19F00776AC3 /* PPG */ = {
+			isa = PBXGroup;
+			children = (
+				7B4AEA071D73D1C100776AC3 /* VIewController */,
+				7B4AEA061D73D1B900776AC3 /* View */,
+				7B4AEA051D73D1AC00776AC3 /* Model */,
+			);
+			path = PPG;
+			sourceTree = "<group>";
+		};
+		7B4AEA051D73D1AC00776AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B4AEA061D73D1B900776AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B4AEA071D73D1C100776AC3 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B4839881D6E8BA900A6036A /* PPGViewController.h */,
+				7B4839891D6E8BA900A6036A /* PPGViewController.m */,
+			);
+			name = VIewController;
 			sourceTree = "<group>";
 		};
 		7BC6AEEE1D61A677005EE8FB = {
