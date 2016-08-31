@@ -14,6 +14,7 @@
 		7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B36C9151D61B679005FC2E1 /* BaseViewController.m */; };
 		7B48398A1D6E8BA900A6036A /* PPGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4839891D6E8BA900A6036A /* PPGViewController.m */; };
 		7B48398C1D6E8EF600A6036A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B48398B1D6E8EF600A6036A /* AVFoundation.framework */; };
+		7B4AEA0B1D7434C400776AC3 /* DataHandleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4AEA0A1D7434C400776AC3 /* DataHandleTool.m */; };
 		7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9921AC1D66EAB2009FAE8C /* SLLYMenuButton.m */; };
 		7BC495311D6EC91B00690CF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC495301D6EC91B00690CF9 /* CoreGraphics.framework */; };
 		7BC495331D6EE53B00690CF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC495321D6EE53B00690CF9 /* QuartzCore.framework */; };
@@ -23,6 +24,9 @@
 		7BEC0E701D62B1A9008C3D21 /* SLLYMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E6F1D62B1A9008C3D21 /* SLLYMenuViewController.m */; };
 		7BEC0E731D62DC06008C3D21 /* SLLYMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E721D62DC06008C3D21 /* SLLYMenuView.m */; };
 		7BEC0E791D63071F008C3D21 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E781D63071F008C3D21 /* UIView+Frame.m */; };
+		7BFBC87B1D75314900943A67 /* DiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC87A1D75314900943A67 /* DiaryModel.m */; };
+		7BFBC87E1D755F7F00943A67 /* IMAGEDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC87D1D755F7F00943A67 /* IMAGEDATA.m */; };
+		7BFBC8841D766F8000943A67 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC8831D766F8000943A67 /* DiaryViewController.m */; };
 		A6B8298C1E475A1CC2711DC7 /* libPods-CrazyDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670C6A79B03524113760B72B /* libPods-CrazyDiary.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,8 @@
 		7B4839881D6E8BA900A6036A /* PPGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPGViewController.h; path = CrazyDiary/health/PPGViewController.h; sourceTree = SOURCE_ROOT; };
 		7B4839891D6E8BA900A6036A /* PPGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPGViewController.m; path = CrazyDiary/health/PPGViewController.m; sourceTree = SOURCE_ROOT; };
 		7B48398B1D6E8EF600A6036A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7B4AEA091D7434C400776AC3 /* DataHandleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandleTool.h; sourceTree = "<group>"; };
+		7B4AEA0A1D7434C400776AC3 /* DataHandleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandleTool.m; sourceTree = "<group>"; };
 		7B9921AB1D66EAB2009FAE8C /* SLLYMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLYMenuButton.h; sourceTree = "<group>"; };
 		7B9921AC1D66EAB2009FAE8C /* SLLYMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLYMenuButton.m; sourceTree = "<group>"; };
 		7BC495301D6EC91B00690CF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +66,13 @@
 		7BEC0E721D62DC06008C3D21 /* SLLYMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLYMenuView.m; sourceTree = "<group>"; };
 		7BEC0E771D63071F008C3D21 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		7BEC0E781D63071F008C3D21 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		7BFBC8791D75314900943A67 /* DiaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryModel.h; sourceTree = "<group>"; };
+		7BFBC87A1D75314900943A67 /* DiaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryModel.m; sourceTree = "<group>"; };
+		7BFBC87C1D755F7F00943A67 /* IMAGEDATA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAGEDATA.h; sourceTree = "<group>"; };
+		7BFBC87D1D755F7F00943A67 /* IMAGEDATA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAGEDATA.m; sourceTree = "<group>"; };
+		7BFBC87F1D75844300943A67 /* CustomizedNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNSLog.h; sourceTree = "<group>"; };
+		7BFBC8821D766F8000943A67 /* DiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryViewController.h; sourceTree = "<group>"; };
+		7BFBC8831D766F8000943A67 /* DiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryViewController.m; sourceTree = "<group>"; };
 		92454E6435606E356A4589FE /* Pods-CrazyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrazyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +126,7 @@
 				7B36C9141D61B679005FC2E1 /* BaseViewController.h */,
 				7B36C9151D61B679005FC2E1 /* BaseViewController.m */,
 				7B36C9171D61B7A9005FC2E1 /* Define.h */,
+				7BFBC87F1D75844300943A67 /* CustomizedNSLog.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -169,6 +183,15 @@
 			name = VIewController;
 			sourceTree = "<group>";
 		};
+		7B4AEA081D74345B00776AC3 /* 存储数据 */ = {
+			isa = PBXGroup;
+			children = (
+				7B4AEA091D7434C400776AC3 /* DataHandleTool.h */,
+				7B4AEA0A1D7434C400776AC3 /* DataHandleTool.m */,
+			);
+			path = "存储数据";
+			sourceTree = "<group>";
+		};
 		7BC6AEEE1D61A677005EE8FB = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +213,8 @@
 		7BC6AEF91D61A677005EE8FB /* CrazyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				7BFBC8771D7530F700943A67 /* DIary */,
+				7B4AEA081D74345B00776AC3 /* 存储数据 */,
 				7B367F831D6DA134004F276B /* health */,
 				7B2C0B681D6AA44200005FF8 /* 三方 */,
 				7BEC0E761D63070A008C3D21 /* Utils */,
@@ -236,6 +261,43 @@
 				7B2C0B611D6A8E7400005FF8 /* MyAFNetWork.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7BFBC8771D7530F700943A67 /* DIary */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBC8811D766F5B00943A67 /* View */,
+				7BFBC8801D766F4C00943A67 /* ViewController */,
+				7BFBC8781D7530FC00943A67 /* Model */,
+			);
+			path = DIary;
+			sourceTree = "<group>";
+		};
+		7BFBC8781D7530FC00943A67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBC8791D75314900943A67 /* DiaryModel.h */,
+				7BFBC87A1D75314900943A67 /* DiaryModel.m */,
+				7BFBC87C1D755F7F00943A67 /* IMAGEDATA.h */,
+				7BFBC87D1D755F7F00943A67 /* IMAGEDATA.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BFBC8801D766F4C00943A67 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBC8821D766F8000943A67 /* DiaryViewController.h */,
+				7BFBC8831D766F8000943A67 /* DiaryViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		7BFBC8811D766F5B00943A67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		CF1F98A33981019BC2501B6E /* Pods */ = {
@@ -368,17 +430,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B48398A1D6E8BA900A6036A /* PPGViewController.m in Sources */,
+				7B4AEA0B1D7434C400776AC3 /* DataHandleTool.m in Sources */,
 				7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */,
 				7B367F861D6DA16B004F276B /* HealthViewController.m in Sources */,
 				7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */,
+				7BFBC87E1D755F7F00943A67 /* IMAGEDATA.m in Sources */,
 				7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */,
 				7BC6AEFC1D61A677005EE8FB /* main.m in Sources */,
+				7BFBC8841D766F8000943A67 /* DiaryViewController.m in Sources */,
 				7B2C0B6C1D6AA44200005FF8 /* JSONKit.m in Sources */,
 				7B2C0B621D6A8E7400005FF8 /* MyAFNetWork.m in Sources */,
 				7BEC0E791D63071F008C3D21 /* UIView+Frame.m in Sources */,
 				7BEC0E731D62DC06008C3D21 /* SLLYMenuView.m in Sources */,
 				7BEC0E701D62B1A9008C3D21 /* SLLYMenuViewController.m in Sources */,
 				7B36C9131D61B65B005FC2E1 /* CommonViewController.m in Sources */,
+				7BFBC87B1D75314900943A67 /* DiaryModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

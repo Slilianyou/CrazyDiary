@@ -55,7 +55,6 @@ void RGBtoHSV(float r,float g, float b, float *h, float* s, float *v){
     isShowRate = YES;
     [self setupAVCapture];
     
-    
     // UI
     [self showHeartRate];
     

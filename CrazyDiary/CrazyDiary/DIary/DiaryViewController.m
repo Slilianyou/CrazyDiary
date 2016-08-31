@@ -1,24 +1,21 @@
 //
-//  CommonViewController.m
+//  DiaryViewController.m
 //  CrazyDiary
 //
-//  Created by ss-iOS-LLY on 16/8/15.
+//  Created by ss-iOS-LLY on 16/8/31.
 //  Copyright © 2016年 lilianyou. All rights reserved.
 //
 
-#import "CommonViewController.h"
+#import "DiaryViewController.h"
 
-@interface CommonViewController ()
+@interface DiaryViewController ()
 
 @end
 
-@implementation CommonViewController
+@implementation DiaryViewController
 
 - (void)viewDidLoad {
-    DataHandleTool *tool = [DataHandleTool manage];
-    [tool loadData];
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
     // Do any additional setup after loading the view.
 }
 

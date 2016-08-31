@@ -9,19 +9,62 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#ifdef __OBJC__
 #import "Define.h"
+#import "CustomizedNSLog.h"
+
+// ThirdMethod
+#import <FMDB.h>
+#import "DataHandleTool.h"
+
 
 #import "SLLYMenuViewController.h"
 #import "CommonViewController.h"
 #import "BaseViewController.h"
+
+//Model
+#import "DiaryModel.h"
+#import "IMAGEDATA.h"
 
 
 //utils
 #import "UIView+Frame.h"
 
 
+
 //VC
 #import "HealthViewController.h"
 #import "PPGViewController.h"
+
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #endif /* PrefixHeader_pch */

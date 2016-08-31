@@ -33,6 +33,10 @@
     return self.frame.origin.y;
 }
 //
+-(void)setRight:(CGFloat)right
+{
+    
+}
 - (CGFloat)right
 {
     return self.x + self.width;
