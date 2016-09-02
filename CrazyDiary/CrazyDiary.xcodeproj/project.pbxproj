@@ -29,11 +29,14 @@
 		7BEC0E701D62B1A9008C3D21 /* SLLYMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E6F1D62B1A9008C3D21 /* SLLYMenuViewController.m */; };
 		7BEC0E731D62DC06008C3D21 /* SLLYMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E721D62DC06008C3D21 /* SLLYMenuView.m */; };
 		7BEC0E791D63071F008C3D21 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E781D63071F008C3D21 /* UIView+Frame.m */; };
+		7BF9F5EC1D79626200021A71 /* DiaryMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9F5EB1D79626200021A71 /* DiaryMenuView.m */; };
+		7BF9F5F01D7969D800021A71 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9F5EF1D7969D800021A71 /* Calendar.png */; };
+		7BF9F5F21D796B6800021A71 /* edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9F5F11D796B6800021A71 /* edit@2x.png */; };
+		7BF9F5F51D796FA500021A71 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9F5F41D796FA500021A71 /* DiaryViewController.m */; };
+		7BF9F5FA1D79702600021A71 /* EditDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9F5F91D79702600021A71 /* EditDiaryViewController.m */; };
 		7BFBC87B1D75314900943A67 /* DiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC87A1D75314900943A67 /* DiaryModel.m */; };
 		7BFBC87E1D755F7F00943A67 /* IMAGEDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC87D1D755F7F00943A67 /* IMAGEDATA.m */; };
-		7BFBC8841D766F8000943A67 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC8831D766F8000943A67 /* DiaryViewController.m */; };
 		7BFBC8871D767E2D00943A67 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC8861D767E2D00943A67 /* CalendarViewController.m */; };
-		7BFBC88A1D76899D00943A67 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BFBC8891D76899D00943A67 /* Calendar.png */; };
 		7BFBC88D1D76A6D800943A67 /* CalendarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC88C1D76A6D800943A67 /* CalendarScrollView.m */; };
 		7BFBC8901D76BB4C00943A67 /* CalendarScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC88F1D76BB4C00943A67 /* CalendarScrollViewCell.m */; };
 		A6B8298C1E475A1CC2711DC7 /* libPods-CrazyDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670C6A79B03524113760B72B /* libPods-CrazyDiary.a */; };
@@ -85,16 +88,21 @@
 		7BEC0E721D62DC06008C3D21 /* SLLYMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLYMenuView.m; sourceTree = "<group>"; };
 		7BEC0E771D63071F008C3D21 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		7BEC0E781D63071F008C3D21 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		7BF9F5EA1D79626200021A71 /* DiaryMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryMenuView.h; sourceTree = "<group>"; };
+		7BF9F5EB1D79626200021A71 /* DiaryMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryMenuView.m; sourceTree = "<group>"; };
+		7BF9F5EF1D7969D800021A71 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
+		7BF9F5F11D796B6800021A71 /* edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit@2x.png"; sourceTree = "<group>"; };
+		7BF9F5F31D796FA500021A71 /* DiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryViewController.h; sourceTree = "<group>"; };
+		7BF9F5F41D796FA500021A71 /* DiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryViewController.m; sourceTree = "<group>"; };
+		7BF9F5F81D79702600021A71 /* EditDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDiaryViewController.h; sourceTree = "<group>"; };
+		7BF9F5F91D79702600021A71 /* EditDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDiaryViewController.m; sourceTree = "<group>"; };
 		7BFBC8791D75314900943A67 /* DiaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryModel.h; sourceTree = "<group>"; };
 		7BFBC87A1D75314900943A67 /* DiaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryModel.m; sourceTree = "<group>"; };
 		7BFBC87C1D755F7F00943A67 /* IMAGEDATA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAGEDATA.h; sourceTree = "<group>"; };
 		7BFBC87D1D755F7F00943A67 /* IMAGEDATA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAGEDATA.m; sourceTree = "<group>"; };
 		7BFBC87F1D75844300943A67 /* CustomizedNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNSLog.h; sourceTree = "<group>"; };
-		7BFBC8821D766F8000943A67 /* DiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryViewController.h; sourceTree = "<group>"; };
-		7BFBC8831D766F8000943A67 /* DiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryViewController.m; sourceTree = "<group>"; };
 		7BFBC8851D767E2D00943A67 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		7BFBC8861D767E2D00943A67 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
-		7BFBC8891D76899D00943A67 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		7BFBC88B1D76A6D800943A67 /* CalendarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarScrollView.h; sourceTree = "<group>"; };
 		7BFBC88C1D76A6D800943A67 /* CalendarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarScrollView.m; sourceTree = "<group>"; };
 		7BFBC88E1D76BB4C00943A67 /* CalendarScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarScrollViewCell.h; sourceTree = "<group>"; };
@@ -218,6 +226,16 @@
 			path = "存储数据";
 			sourceTree = "<group>";
 		};
+		7B9388411D79543800DE2758 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBC8811D766F5B00943A67 /* View */,
+				7BFBC8801D766F4C00943A67 /* ViewController */,
+				7BFBC8781D7530FC00943A67 /* Model */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
 		7BC6AEEE1D61A677005EE8FB = {
 			isa = PBXGroup;
 			children = (
@@ -292,12 +310,22 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		7BF9F5F71D79700700021A71 /* EditDiaryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7BF9F5F81D79702600021A71 /* EditDiaryViewController.h */,
+				7BF9F5F91D79702600021A71 /* EditDiaryViewController.m */,
+			);
+			path = EditDiaryViewController;
+			sourceTree = "<group>";
+		};
 		7BFBC8771D7530F700943A67 /* DIary */ = {
 			isa = PBXGroup;
 			children = (
-				7BFBC8811D766F5B00943A67 /* View */,
-				7BFBC8801D766F4C00943A67 /* ViewController */,
-				7BFBC8781D7530FC00943A67 /* Model */,
+				7BF9F5F71D79700700021A71 /* EditDiaryViewController */,
+				7B9388411D79543800DE2758 /* Calendar */,
+				7BF9F5F31D796FA500021A71 /* DiaryViewController.h */,
+				7BF9F5F41D796FA500021A71 /* DiaryViewController.m */,
 			);
 			path = DIary;
 			sourceTree = "<group>";
@@ -322,8 +350,6 @@
 		7BFBC8801D766F4C00943A67 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7BFBC8821D766F8000943A67 /* DiaryViewController.h */,
-				7BFBC8831D766F8000943A67 /* DiaryViewController.m */,
 				7BFBC8851D767E2D00943A67 /* CalendarViewController.h */,
 				7BFBC8861D767E2D00943A67 /* CalendarViewController.m */,
 			);
@@ -339,6 +365,8 @@
 				7BFBC88F1D76BB4C00943A67 /* CalendarScrollViewCell.m */,
 				7B1DB0961D781E0F00C7C54D /* DateView.h */,
 				7B1DB0971D781E0F00C7C54D /* DateView.m */,
+				7BF9F5EA1D79626200021A71 /* DiaryMenuView.h */,
+				7BF9F5EB1D79626200021A71 /* DiaryMenuView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -346,7 +374,8 @@
 		7BFBC8881D76899300943A67 /* Res */ = {
 			isa = PBXGroup;
 			children = (
-				7BFBC8891D76899D00943A67 /* Calendar.png */,
+				7BF9F5F11D796B6800021A71 /* edit@2x.png */,
+				7BF9F5EF1D7969D800021A71 /* Calendar.png */,
 			);
 			path = Res;
 			sourceTree = "<group>";
@@ -421,8 +450,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF9F5F21D796B6800021A71 /* edit@2x.png in Resources */,
+				7BF9F5F01D7969D800021A71 /* Calendar.png in Resources */,
 				7BC6AF071D61A677005EE8FB /* Assets.xcassets in Resources */,
-				7BFBC88A1D76899D00943A67 /* Calendar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +511,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF9F5FA1D79702600021A71 /* EditDiaryViewController.m in Sources */,
+				7BF9F5F51D796FA500021A71 /* DiaryViewController.m in Sources */,
 				7B48398A1D6E8BA900A6036A /* PPGViewController.m in Sources */,
 				7B4AEA0B1D7434C400776AC3 /* DataHandleTool.m in Sources */,
 				7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */,
@@ -494,7 +526,6 @@
 				7BFBC88D1D76A6D800943A67 /* CalendarScrollView.m in Sources */,
 				7B1DB08C1D77D39700C7C54D /* GradientView.m in Sources */,
 				7B1DB0951D78151F00C7C54D /* DateModel.m in Sources */,
-				7BFBC8841D766F8000943A67 /* DiaryViewController.m in Sources */,
 				7B2C0B6C1D6AA44200005FF8 /* JSONKit.m in Sources */,
 				7B2C0B621D6A8E7400005FF8 /* MyAFNetWork.m in Sources */,
 				7BFBC8901D76BB4C00943A67 /* CalendarScrollViewCell.m in Sources */,
@@ -503,6 +534,7 @@
 				7BEC0E701D62B1A9008C3D21 /* SLLYMenuViewController.m in Sources */,
 				7B1DB08F1D77F92100C7C54D /* CellDateModel.m in Sources */,
 				7B36C9131D61B65B005FC2E1 /* CommonViewController.m in Sources */,
+				7BF9F5EC1D79626200021A71 /* DiaryMenuView.m in Sources */,
 				7BFBC87B1D75314900943A67 /* DiaryModel.m in Sources */,
 				7B1DB0921D7803F000C7C54D /* DateTools.m in Sources */,
 			);
