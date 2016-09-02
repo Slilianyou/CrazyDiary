@@ -72,25 +72,25 @@ static NSString * kY = @"curveY";
         [self configCurveView];
         [self confingAction];
         
-        // 模糊效果
-        blurView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:style]];
-        blurView.frame = keyWindow.frame;
-        blurView.alpha = 0.0f;
+//        // 模糊效果
+//        blurView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:style]];
+//        blurView.frame = keyWindow.frame;
+//        blurView.alpha = 0.0f;
         
         // ???
         helperSideView = [[UIView alloc]initWithFrame:CGRectMake(-40, 0, 40, 40)];
-        helperSideView.backgroundColor = [UIColor redColor];
+        helperSideView.backgroundColor = [UIColor blackColor];
         helperSideView.hidden = NO;
         [keyWindow addSubview:helperSideView];
         
         helperCenterView = [[UIView alloc]initWithFrame:CGRectMake(-40, keyWindow.height / 2 - 20, 40, 40)];
-        helperCenterView.backgroundColor = [UIColor blueColor];
+        helperCenterView.backgroundColor = [UIColor blackColor];
         helperCenterView.hidden = NO;
         [keyWindow addSubview:helperCenterView];
         
         
         self.frame = CGRectMake(-keyWindow.width / 2.f - EXTRAAREA, 0, keyWindow.width / 2.f + EXTRAAREA, keyWindow.height);
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor clearColor];
         [keyWindow insertSubview:self belowSubview:helperSideView];
         
         
@@ -114,12 +114,14 @@ static NSString * kY = @"curveY";
     [path addLineToPoint:CGPointMake(0, self.height)];
     [path closePath];
     //
-    [_menuColor set];
-    [kGetColor(57, 67, 89) set];
+    
+//    [kGetColor(57, 67, 89) set];
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextAddPath(context, path.CGPath);
+    [_menuColor set];
     CGContextFillPath(context);
-    
+    [self updateShaperLayerPath];
+    [self calculatePath];
 }
 #pragma mark --Action
 - (void)beforeAnimation
@@ -140,7 +142,7 @@ static NSString * kY = @"curveY";
 }
 - (void)displayLinkAction:(CADisplayLink *)dis
 {
-    CALayer *sideHelperPresentationLayer = [helperSideView  .layer presentationLayer];
+    CALayer *sideHelperPresentationLayer = [helperSideView.layer presentationLayer];
     CALayer *centerHelperPresentationLayer = (CALayer *)[helperCenterView.layer presentationLayer];
     CGRect centerRect = [[centerHelperPresentationLayer valueForKeyPath:@"frame"]CGRectValue];
     CGRect siderRect = [[sideHelperPresentationLayer valueForKeyPath:@"frame"]CGRectValue];
@@ -204,7 +206,7 @@ static NSString * kY = @"curveY";
         self.frame = CGRectMake(-keyWindow.width / 2 - EXTRAAREA, 0, keyWindow.width / 2 + EXTRAAREA, keyWindow.height);
     }];
     [self beforeAnimation];
-    triggered = NO;
+  
     [UIView animateWithDuration:0.7 delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:0.9f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
         
         helperSideView.center = CGPointMake(-helperSideView.frame.size.height/2, helperSideView.frame.size.height/2);
@@ -228,14 +230,16 @@ static NSString * kY = @"curveY";
         [self finishAnimation];
     }];
     [self showAnimation];
-    
+    _curveView.frame = CGRectMake(0, SCREENHEIGHT / 2.f, 3, 3);
+    [self  updateShaperLayerPath];
+    [self calculatePath];
     triggered = NO;
 }
 - (void)showAnimation
 {
     //菜单关闭时的弹黄动效
     [self beginAnimation];
-    [UIView animateWithDuration:2.f delay:0.f usingSpringWithDamping:0.2f initialSpringVelocity:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:3.f delay:0.f usingSpringWithDamping:0.1f initialSpringVelocity:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         // 曲线点(r5点)是一个view.所以在block中有弹簧效果.然后根据他的动效路径,在calculatePath中计算弹性图形的形状
         _curveView.frame = CGRectMake(0, SCREENHEIGHT /2.f, 3, 3);
     } completion:^(BOOL finished) {
@@ -245,9 +249,7 @@ static NSString * kY = @"curveY";
             [self finishAnimation];
         }
     }];
-    _curveView.frame = CGRectMake(0, SCREENHEIGHT / 2.f, 3, 3);
-    [self  updateShaperLayerPath];
-    [self calculatePath];
+ 
 }
 - (void)beginAnimation
 {
@@ -373,8 +375,8 @@ static NSString * kY = @"curveY";
 {
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(0, 0)];
-    [path moveToPoint:CGPointMake(0, SCREENHEIGHT)];
-    [path addQuadCurveToPoint:CGPointMake(0, 0) controlPoint:CGPointMake(_curveX, _curveY)];
+    [path addLineToPoint:CGPointMake(0, SCREENHEIGHT)];
+    [path addQuadCurveToPoint:CGPointMake(0, 0) controlPoint:CGPointMake(_curveX, _curveY)];// r3,r4,r5确定的一个弧线
     [path closePath];
     _shapeLayer.path = path.CGPath;
 }

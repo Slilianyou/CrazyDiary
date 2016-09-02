@@ -37,8 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    self.view.backgroundColor = [UIColor greenColor];
+
     self.navigationController.navigationBar.hidden = YES;
     [self.view addSubview:self.frontViewContainer];
     [self creatMenuView];

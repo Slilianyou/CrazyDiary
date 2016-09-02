@@ -46,7 +46,7 @@
     
     UIBezierPath *roundedRectanglePath = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(rect, 1, 1) cornerRadius:rect.size.height / 2];
     [self.btnColor setFill];
-//    [[UIColor orangeColor]setFill];
+
     [roundedRectanglePath fill];
     [[UIColor whiteColor] setStroke];
     roundedRectanglePath.lineWidth = 1;
