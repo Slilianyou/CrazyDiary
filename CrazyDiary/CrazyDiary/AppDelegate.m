@@ -30,9 +30,14 @@
     PPGViewController *ppGVC = [[PPGViewController alloc]init];
     UINavigationController *ppGNavi = [[UINavigationController alloc]initWithRootViewController:ppGVC];
     
-    NSArray *titleArr = @[@"普通",@"健康",@"测心跳"];
+    DiaryViewController *diaryVC = [[DiaryViewController alloc]init];
+    UINavigationController *diaryNavi = [[UINavigationController alloc]initWithRootViewController:diaryVC];
+    
+    
+    
+    NSArray *titleArr = @[@"普通",@"健康",@"测心跳",@"日记"];
     SLLYMenuViewController *menuVC = [[SLLYMenuViewController alloc]initWithFrontView:commonNavi andButtonTitleArr:titleArr];
-    menuVC.viewControllersArr = @[commonNavi,healthNavi,ppGNavi];
+    menuVC.viewControllersArr = @[commonNavi,healthNavi,ppGNavi,diaryNavi];
     UINavigationController *menuNavi = [[UINavigationController alloc]initWithRootViewController:menuVC];
     
     self.window.rootViewController = menuNavi;

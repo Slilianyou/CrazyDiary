@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1DB08C1D77D39700C7C54D /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB08B1D77D39700C7C54D /* GradientView.m */; };
+		7B1DB08F1D77F92100C7C54D /* CellDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB08E1D77F92100C7C54D /* CellDateModel.m */; };
+		7B1DB0921D7803F000C7C54D /* DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB0911D7803F000C7C54D /* DateTools.m */; };
+		7B1DB0951D78151F00C7C54D /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB0941D78151F00C7C54D /* DateModel.m */; };
+		7B1DB0981D781E0F00C7C54D /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB0971D781E0F00C7C54D /* DateView.m */; };
 		7B2C0B621D6A8E7400005FF8 /* MyAFNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C0B611D6A8E7400005FF8 /* MyAFNetWork.m */; };
 		7B2C0B6C1D6AA44200005FF8 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C0B6B1D6AA44200005FF8 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7B367F861D6DA16B004F276B /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B367F851D6DA16B004F276B /* HealthViewController.m */; };
@@ -27,12 +32,26 @@
 		7BFBC87B1D75314900943A67 /* DiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC87A1D75314900943A67 /* DiaryModel.m */; };
 		7BFBC87E1D755F7F00943A67 /* IMAGEDATA.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC87D1D755F7F00943A67 /* IMAGEDATA.m */; };
 		7BFBC8841D766F8000943A67 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC8831D766F8000943A67 /* DiaryViewController.m */; };
+		7BFBC8871D767E2D00943A67 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC8861D767E2D00943A67 /* CalendarViewController.m */; };
+		7BFBC88A1D76899D00943A67 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BFBC8891D76899D00943A67 /* Calendar.png */; };
+		7BFBC88D1D76A6D800943A67 /* CalendarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC88C1D76A6D800943A67 /* CalendarScrollView.m */; };
+		7BFBC8901D76BB4C00943A67 /* CalendarScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFBC88F1D76BB4C00943A67 /* CalendarScrollViewCell.m */; };
 		A6B8298C1E475A1CC2711DC7 /* libPods-CrazyDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670C6A79B03524113760B72B /* libPods-CrazyDiary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		670C6A79B03524113760B72B /* libPods-CrazyDiary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrazyDiary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DABF513B22FFDC752DD497E /* Pods-CrazyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrazyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary.release.xcconfig"; sourceTree = "<group>"; };
+		7B1DB08A1D77D39700C7C54D /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		7B1DB08B1D77D39700C7C54D /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		7B1DB08D1D77F92100C7C54D /* CellDateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDateModel.h; sourceTree = "<group>"; };
+		7B1DB08E1D77F92100C7C54D /* CellDateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDateModel.m; sourceTree = "<group>"; };
+		7B1DB0901D7803EF00C7C54D /* DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTools.h; sourceTree = "<group>"; };
+		7B1DB0911D7803F000C7C54D /* DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTools.m; sourceTree = "<group>"; };
+		7B1DB0931D78151F00C7C54D /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
+		7B1DB0941D78151F00C7C54D /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
+		7B1DB0961D781E0F00C7C54D /* DateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateView.h; sourceTree = "<group>"; };
+		7B1DB0971D781E0F00C7C54D /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateView.m; sourceTree = "<group>"; };
 		7B2C0B601D6A8E7400005FF8 /* MyAFNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAFNetWork.h; sourceTree = "<group>"; };
 		7B2C0B611D6A8E7400005FF8 /* MyAFNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAFNetWork.m; sourceTree = "<group>"; };
 		7B2C0B6A1D6AA44200005FF8 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -73,6 +92,13 @@
 		7BFBC87F1D75844300943A67 /* CustomizedNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNSLog.h; sourceTree = "<group>"; };
 		7BFBC8821D766F8000943A67 /* DiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryViewController.h; sourceTree = "<group>"; };
 		7BFBC8831D766F8000943A67 /* DiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryViewController.m; sourceTree = "<group>"; };
+		7BFBC8851D767E2D00943A67 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		7BFBC8861D767E2D00943A67 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		7BFBC8891D76899D00943A67 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
+		7BFBC88B1D76A6D800943A67 /* CalendarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarScrollView.h; sourceTree = "<group>"; };
+		7BFBC88C1D76A6D800943A67 /* CalendarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarScrollView.m; sourceTree = "<group>"; };
+		7BFBC88E1D76BB4C00943A67 /* CalendarScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarScrollViewCell.h; sourceTree = "<group>"; };
+		7BFBC88F1D76BB4C00943A67 /* CalendarScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarScrollViewCell.m; sourceTree = "<group>"; };
 		92454E6435606E356A4589FE /* Pods-CrazyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrazyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +239,7 @@
 		7BC6AEF91D61A677005EE8FB /* CrazyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				7BFBC8881D76899300943A67 /* Res */,
 				7BFBC8771D7530F700943A67 /* DIary */,
 				7B4AEA081D74345B00776AC3 /* 存储数据 */,
 				7B367F831D6DA134004F276B /* health */,
@@ -259,6 +286,8 @@
 				7BEC0E781D63071F008C3D21 /* UIView+Frame.m */,
 				7B2C0B601D6A8E7400005FF8 /* MyAFNetWork.h */,
 				7B2C0B611D6A8E7400005FF8 /* MyAFNetWork.m */,
+				7B1DB08A1D77D39700C7C54D /* GradientView.h */,
+				7B1DB08B1D77D39700C7C54D /* GradientView.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -280,6 +309,12 @@
 				7BFBC87A1D75314900943A67 /* DiaryModel.m */,
 				7BFBC87C1D755F7F00943A67 /* IMAGEDATA.h */,
 				7BFBC87D1D755F7F00943A67 /* IMAGEDATA.m */,
+				7B1DB08D1D77F92100C7C54D /* CellDateModel.h */,
+				7B1DB08E1D77F92100C7C54D /* CellDateModel.m */,
+				7B1DB0901D7803EF00C7C54D /* DateTools.h */,
+				7B1DB0911D7803F000C7C54D /* DateTools.m */,
+				7B1DB0931D78151F00C7C54D /* DateModel.h */,
+				7B1DB0941D78151F00C7C54D /* DateModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -289,6 +324,8 @@
 			children = (
 				7BFBC8821D766F8000943A67 /* DiaryViewController.h */,
 				7BFBC8831D766F8000943A67 /* DiaryViewController.m */,
+				7BFBC8851D767E2D00943A67 /* CalendarViewController.h */,
+				7BFBC8861D767E2D00943A67 /* CalendarViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -296,8 +333,22 @@
 		7BFBC8811D766F5B00943A67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7BFBC88B1D76A6D800943A67 /* CalendarScrollView.h */,
+				7BFBC88C1D76A6D800943A67 /* CalendarScrollView.m */,
+				7BFBC88E1D76BB4C00943A67 /* CalendarScrollViewCell.h */,
+				7BFBC88F1D76BB4C00943A67 /* CalendarScrollViewCell.m */,
+				7B1DB0961D781E0F00C7C54D /* DateView.h */,
+				7B1DB0971D781E0F00C7C54D /* DateView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		7BFBC8881D76899300943A67 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBC8891D76899D00943A67 /* Calendar.png */,
+			);
+			path = Res;
 			sourceTree = "<group>";
 		};
 		CF1F98A33981019BC2501B6E /* Pods */ = {
@@ -371,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC6AF071D61A677005EE8FB /* Assets.xcassets in Resources */,
+				7BFBC88A1D76899D00943A67 /* Calendar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,17 +486,25 @@
 				7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */,
 				7B367F861D6DA16B004F276B /* HealthViewController.m in Sources */,
 				7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */,
+				7BFBC8871D767E2D00943A67 /* CalendarViewController.m in Sources */,
+				7B1DB0981D781E0F00C7C54D /* DateView.m in Sources */,
 				7BFBC87E1D755F7F00943A67 /* IMAGEDATA.m in Sources */,
 				7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */,
 				7BC6AEFC1D61A677005EE8FB /* main.m in Sources */,
+				7BFBC88D1D76A6D800943A67 /* CalendarScrollView.m in Sources */,
+				7B1DB08C1D77D39700C7C54D /* GradientView.m in Sources */,
+				7B1DB0951D78151F00C7C54D /* DateModel.m in Sources */,
 				7BFBC8841D766F8000943A67 /* DiaryViewController.m in Sources */,
 				7B2C0B6C1D6AA44200005FF8 /* JSONKit.m in Sources */,
 				7B2C0B621D6A8E7400005FF8 /* MyAFNetWork.m in Sources */,
+				7BFBC8901D76BB4C00943A67 /* CalendarScrollViewCell.m in Sources */,
 				7BEC0E791D63071F008C3D21 /* UIView+Frame.m in Sources */,
 				7BEC0E731D62DC06008C3D21 /* SLLYMenuView.m in Sources */,
 				7BEC0E701D62B1A9008C3D21 /* SLLYMenuViewController.m in Sources */,
+				7B1DB08F1D77F92100C7C54D /* CellDateModel.m in Sources */,
 				7B36C9131D61B65B005FC2E1 /* CommonViewController.m in Sources */,
 				7BFBC87B1D75314900943A67 /* DiaryModel.m in Sources */,
+				7B1DB0921D7803F000C7C54D /* DateTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CommonViewController : UIViewController
-
+#pragma mark --Method
+- (void)setLeftNavigationBarWithImage:(UIImage *)backImage andTarget:(id)target andAction:(SEL)targetAction andTag:(int)tag;
 @end

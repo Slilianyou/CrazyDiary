@@ -22,6 +22,23 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)setLeftNavigationBarWithImage:(UIImage *)backImage andTarget:(id)target andAction:(SEL)targetAction andTag:(int)tag
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 22, 22);
+    [btn setImage:backImage forState:UIControlStateNormal];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    [btn addTarget:target action:targetAction forControlEvents:UIControlEventTouchUpInside];
+    btn.tag = tag;
+    
+    UIBarButtonItem *space = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    if (IOSversion >= 7.0) {
+        space.width =-10;
+    }
+    NSArray *itemArr = [NSArray arrayWithObjects:space,item, nil];
+    self.navigationItem.leftBarButtonItems = itemArr;
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

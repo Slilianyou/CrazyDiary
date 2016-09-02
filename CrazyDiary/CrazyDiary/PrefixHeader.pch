@@ -21,6 +21,8 @@
 #import "SLLYMenuViewController.h"
 #import "CommonViewController.h"
 #import "BaseViewController.h"
+#import "DiaryViewController.h"
+
 
 //Model
 #import "DiaryModel.h"

@@ -7,6 +7,9 @@
 //
 
 #import "DiaryViewController.h"
+#import "CalendarViewController.h"
+
+
 
 @interface DiaryViewController ()
 
@@ -16,9 +19,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"日记";
+    self.view.backgroundColor = [UIColor redColor];
+    //
+
+    
+    
+    [self setLeftBtn];
     // Do any additional setup after loading the view.
 }
 
+- (void)setLeftBtn
+{
+    [self setLeftNavigationBarWithImage:[UIImage imageNamed:@"Calendar"] andTarget:self andAction:@selector(presentCalendar) andTag:0];
+}
+
+- (void)presentCalendar
+{
+    [self.navigationController pushViewController:[[CalendarViewController alloc]init] animated:YES];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

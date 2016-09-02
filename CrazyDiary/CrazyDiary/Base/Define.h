@@ -14,7 +14,7 @@
 #define kGetColor(r,g,b)   [UIColor colorWithRed:(r)/ 255.f green:(g)/255.f blue:(b)/255.f alpha:1.0]
 
 //
-
+#define IOSversion  [[UIDevice currentDevice]systemVersion].floatValue
 
 
 
