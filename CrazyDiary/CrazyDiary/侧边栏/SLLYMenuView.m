@@ -72,10 +72,10 @@ static NSString * kY = @"curveY";
         [self configCurveView];
         [self confingAction];
         
-//        // 模糊效果
-//        blurView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:style]];
-//        blurView.frame = keyWindow.frame;
-//        blurView.alpha = 0.0f;
+        // 模糊效果
+        blurView = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:style]];
+        blurView.frame = keyWindow.frame;
+        blurView.alpha = 0.0f;
         
         // ???
         helperSideView = [[UIView alloc]initWithFrame:CGRectMake(-40, 0, 40, 40)];
