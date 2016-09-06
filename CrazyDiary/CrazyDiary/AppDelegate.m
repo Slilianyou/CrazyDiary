@@ -40,9 +40,11 @@
     menuVC.viewControllersArr = @[commonNavi,healthNavi,ppGNavi,diaryNavi];
     UINavigationController *menuNavi = [[UINavigationController alloc]initWithRootViewController:menuVC];
     
+    //
+ 
     self.window.rootViewController = menuNavi;
     [self.window makeKeyAndVisible];
-  
+   
     return YES;
 }
 

@@ -21,7 +21,8 @@
     if (self) {
         self.backgroundColor = [UIColor lightGrayColor];
         _editBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_editBtn setImage:[UIImage imageNamed:@"edit"] forState:UIControlStateNormal];
+        [_editBtn setBackgroundImage:[UIImage imageNamed:@"edit"] forState:UIControlStateNormal];
+        _editBtn.userInteractionEnabled = YES;
         _editBtn.backgroundColor = [UIColor redColor];
         [self addSubview:_editBtn];
         

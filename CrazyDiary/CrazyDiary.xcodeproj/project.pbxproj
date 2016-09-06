@@ -26,6 +26,8 @@
 		7BC6AEFC1D61A677005EE8FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AEFB1D61A677005EE8FB /* main.m */; };
 		7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC6AEFE1D61A677005EE8FB /* AppDelegate.m */; };
 		7BC6AF071D61A677005EE8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC6AF061D61A677005EE8FB /* Assets.xcassets */; };
+		7BCACB6B1D7D0D7B00941AC3 /* StudyHierarchy3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCACB6A1D7D0D7B00941AC3 /* StudyHierarchy3D.m */; };
+		7BCACB6D1D7D0E3F00941AC3 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCACB6C1D7D0E3F00941AC3 /* CoreImage.framework */; };
 		7BEC0E701D62B1A9008C3D21 /* SLLYMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E6F1D62B1A9008C3D21 /* SLLYMenuViewController.m */; };
 		7BEC0E731D62DC06008C3D21 /* SLLYMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E721D62DC06008C3D21 /* SLLYMenuView.m */; };
 		7BEC0E791D63071F008C3D21 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC0E781D63071F008C3D21 /* UIView+Frame.m */; };
@@ -82,6 +84,9 @@
 		7BC6AEFE1D61A677005EE8FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7BC6AF061D61A677005EE8FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC6AF0B1D61A677005EE8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCACB691D7D0D7B00941AC3 /* StudyHierarchy3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyHierarchy3D.h; sourceTree = "<group>"; };
+		7BCACB6A1D7D0D7B00941AC3 /* StudyHierarchy3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyHierarchy3D.m; sourceTree = "<group>"; };
+		7BCACB6C1D7D0E3F00941AC3 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		7BEC0E6E1D62B1A9008C3D21 /* SLLYMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLYMenuViewController.h; sourceTree = "<group>"; };
 		7BEC0E6F1D62B1A9008C3D21 /* SLLYMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLYMenuViewController.m; sourceTree = "<group>"; };
 		7BEC0E711D62DC06008C3D21 /* SLLYMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLYMenuView.h; sourceTree = "<group>"; };
@@ -115,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BCACB6D1D7D0E3F00941AC3 /* CoreImage.framework in Frameworks */,
 				7BC495331D6EE53B00690CF9 /* QuartzCore.framework in Frameworks */,
 				7BC495311D6EC91B00690CF9 /* CoreGraphics.framework in Frameworks */,
 				7B48398C1D6E8EF600A6036A /* AVFoundation.framework in Frameworks */,
@@ -168,6 +174,7 @@
 		7B36C9191D61BB8E005FC2E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BCACB6C1D7D0E3F00941AC3 /* CoreImage.framework */,
 				7BC495321D6EE53B00690CF9 /* QuartzCore.framework */,
 				7BC495301D6EC91B00690CF9 /* CoreGraphics.framework */,
 				7B48398B1D6E8EF600A6036A /* AVFoundation.framework */,
@@ -257,7 +264,7 @@
 		7BC6AEF91D61A677005EE8FB /* CrazyDiary */ = {
 			isa = PBXGroup;
 			children = (
-				7BFBC8881D76899300943A67 /* Res */,
+				7BCACB681D7D0BF200941AC3 /* fun */,
 				7BFBC8771D7530F700943A67 /* DIary */,
 				7B4AEA081D74345B00776AC3 /* 存储数据 */,
 				7B367F831D6DA134004F276B /* health */,
@@ -265,6 +272,7 @@
 				7BEC0E761D63070A008C3D21 /* Utils */,
 				7BEC0E6D1D62B0A7008C3D21 /* 侧边栏 */,
 				7B36C9101D61B536005FC2E1 /* Base */,
+				7BFBC8881D76899300943A67 /* Res */,
 				7BC6AEFD1D61A677005EE8FB /* AppDelegate.h */,
 				7BC6AEFE1D61A677005EE8FB /* AppDelegate.m */,
 				7BC6AEFA1D61A677005EE8FB /* Supporting Files */,
@@ -282,6 +290,15 @@
 				7B36C9181D61B843005FC2E1 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BCACB681D7D0BF200941AC3 /* fun */ = {
+			isa = PBXGroup;
+			children = (
+				7BCACB691D7D0D7B00941AC3 /* StudyHierarchy3D.h */,
+				7BCACB6A1D7D0D7B00941AC3 /* StudyHierarchy3D.m */,
+			);
+			path = fun;
 			sourceTree = "<group>";
 		};
 		7BEC0E6D1D62B0A7008C3D21 /* 侧边栏 */ = {
@@ -518,6 +535,7 @@
 				7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */,
 				7B367F861D6DA16B004F276B /* HealthViewController.m in Sources */,
 				7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */,
+				7BCACB6B1D7D0D7B00941AC3 /* StudyHierarchy3D.m in Sources */,
 				7BFBC8871D767E2D00943A67 /* CalendarViewController.m in Sources */,
 				7B1DB0981D781E0F00C7C54D /* DateView.m in Sources */,
 				7BFBC87E1D755F7F00943A67 /* IMAGEDATA.m in Sources */,
