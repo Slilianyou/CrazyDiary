@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B022AF41D825982002BEC02 /* CUTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B022AF31D825982002BEC02 /* CUTabBar.m */; };
+		7B022AF71D825C64002BEC02 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B022AF61D825C64002BEC02 /* UIImage+Image.m */; };
+		7B022AFA1D82833B002BEC02 /* CUTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B022AF91D82833B002BEC02 /* CUTabBarController.m */; };
+		7B022AFF1D8286DF002BEC02 /* DiarySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B022AFE1D8286DF002BEC02 /* DiarySettingViewController.m */; };
+		7B022B021D8286FB002BEC02 /* DiaryUnLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B022B011D8286FB002BEC02 /* DiaryUnLockViewController.m */; };
+		7B022B051D8289C0002BEC02 /* CUUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B022B041D8289C0002BEC02 /* CUUINavigationController.m */; };
 		7B1DB08C1D77D39700C7C54D /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB08B1D77D39700C7C54D /* GradientView.m */; };
 		7B1DB08F1D77F92100C7C54D /* CellDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB08E1D77F92100C7C54D /* CellDateModel.m */; };
 		7B1DB0921D7803F000C7C54D /* DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DB0911D7803F000C7C54D /* DateTools.m */; };
@@ -47,6 +53,18 @@
 /* Begin PBXFileReference section */
 		670C6A79B03524113760B72B /* libPods-CrazyDiary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrazyDiary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DABF513B22FFDC752DD497E /* Pods-CrazyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrazyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrazyDiary/Pods-CrazyDiary.release.xcconfig"; sourceTree = "<group>"; };
+		7B022AF21D825982002BEC02 /* CUTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUTabBar.h; sourceTree = "<group>"; };
+		7B022AF31D825982002BEC02 /* CUTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUTabBar.m; sourceTree = "<group>"; };
+		7B022AF51D825C64002BEC02 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		7B022AF61D825C64002BEC02 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		7B022AF81D82833B002BEC02 /* CUTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUTabBarController.h; sourceTree = "<group>"; };
+		7B022AF91D82833B002BEC02 /* CUTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUTabBarController.m; sourceTree = "<group>"; };
+		7B022AFD1D8286DF002BEC02 /* DiarySettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiarySettingViewController.h; sourceTree = "<group>"; };
+		7B022AFE1D8286DF002BEC02 /* DiarySettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiarySettingViewController.m; sourceTree = "<group>"; };
+		7B022B001D8286FB002BEC02 /* DiaryUnLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryUnLockViewController.h; sourceTree = "<group>"; };
+		7B022B011D8286FB002BEC02 /* DiaryUnLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryUnLockViewController.m; sourceTree = "<group>"; };
+		7B022B031D8289C0002BEC02 /* CUUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CUUINavigationController.h; path = ../CUUINavigationController.h; sourceTree = "<group>"; };
+		7B022B041D8289C0002BEC02 /* CUUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CUUINavigationController.m; path = ../CUUINavigationController.m; sourceTree = "<group>"; };
 		7B1DB08A1D77D39700C7C54D /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
 		7B1DB08B1D77D39700C7C54D /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
 		7B1DB08D1D77F92100C7C54D /* CellDateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDateModel.h; sourceTree = "<group>"; };
@@ -131,6 +149,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B022AF11D8257D7002BEC02 /* 自定义Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				7B022AF21D825982002BEC02 /* CUTabBar.h */,
+				7B022AF31D825982002BEC02 /* CUTabBar.m */,
+				7B022AF81D82833B002BEC02 /* CUTabBarController.h */,
+				7B022AF91D82833B002BEC02 /* CUTabBarController.m */,
+				7B022B031D8289C0002BEC02 /* CUUINavigationController.h */,
+				7B022B041D8289C0002BEC02 /* CUUINavigationController.m */,
+			);
+			path = "自定义Tabbar";
+			sourceTree = "<group>";
+		};
+		7B022AFB1D828694002BEC02 /* 解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				7B022B001D8286FB002BEC02 /* DiaryUnLockViewController.h */,
+				7B022B011D8286FB002BEC02 /* DiaryUnLockViewController.m */,
+			);
+			path = "解锁";
+			sourceTree = "<group>";
+		};
+		7B022AFC1D8286A2002BEC02 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				7B022AFD1D8286DF002BEC02 /* DiarySettingViewController.h */,
+				7B022AFE1D8286DF002BEC02 /* DiarySettingViewController.m */,
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
 		7B2C0B681D6AA44200005FF8 /* 三方 */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +210,7 @@
 		7B36C9101D61B536005FC2E1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				7B022AF11D8257D7002BEC02 /* 自定义Tabbar */,
 				7B36C9111D61B65B005FC2E1 /* CommonViewController.h */,
 				7B36C9121D61B65B005FC2E1 /* CommonViewController.m */,
 				7B36C9141D61B679005FC2E1 /* BaseViewController.h */,
@@ -323,6 +373,8 @@
 				7B2C0B611D6A8E7400005FF8 /* MyAFNetWork.m */,
 				7B1DB08A1D77D39700C7C54D /* GradientView.h */,
 				7B1DB08B1D77D39700C7C54D /* GradientView.m */,
+				7B022AF51D825C64002BEC02 /* UIImage+Image.h */,
+				7B022AF61D825C64002BEC02 /* UIImage+Image.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -339,6 +391,8 @@
 		7BFBC8771D7530F700943A67 /* DIary */ = {
 			isa = PBXGroup;
 			children = (
+				7B022AFC1D8286A2002BEC02 /* 设置 */,
+				7B022AFB1D828694002BEC02 /* 解锁 */,
 				7BF9F5F71D79700700021A71 /* EditDiaryViewController */,
 				7B9388411D79543800DE2758 /* Calendar */,
 				7BF9F5F31D796FA500021A71 /* DiaryViewController.h */,
@@ -528,11 +582,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B022AFF1D8286DF002BEC02 /* DiarySettingViewController.m in Sources */,
 				7BF9F5FA1D79702600021A71 /* EditDiaryViewController.m in Sources */,
 				7BF9F5F51D796FA500021A71 /* DiaryViewController.m in Sources */,
 				7B48398A1D6E8BA900A6036A /* PPGViewController.m in Sources */,
 				7B4AEA0B1D7434C400776AC3 /* DataHandleTool.m in Sources */,
 				7B9921AD1D66EAB2009FAE8C /* SLLYMenuButton.m in Sources */,
+				7B022AF41D825982002BEC02 /* CUTabBar.m in Sources */,
 				7B367F861D6DA16B004F276B /* HealthViewController.m in Sources */,
 				7BC6AEFF1D61A677005EE8FB /* AppDelegate.m in Sources */,
 				7BCACB6B1D7D0D7B00941AC3 /* StudyHierarchy3D.m in Sources */,
@@ -540,19 +596,23 @@
 				7B1DB0981D781E0F00C7C54D /* DateView.m in Sources */,
 				7BFBC87E1D755F7F00943A67 /* IMAGEDATA.m in Sources */,
 				7B36C9161D61B679005FC2E1 /* BaseViewController.m in Sources */,
+				7B022AFA1D82833B002BEC02 /* CUTabBarController.m in Sources */,
 				7BC6AEFC1D61A677005EE8FB /* main.m in Sources */,
 				7BFBC88D1D76A6D800943A67 /* CalendarScrollView.m in Sources */,
 				7B1DB08C1D77D39700C7C54D /* GradientView.m in Sources */,
 				7B1DB0951D78151F00C7C54D /* DateModel.m in Sources */,
 				7B2C0B6C1D6AA44200005FF8 /* JSONKit.m in Sources */,
 				7B2C0B621D6A8E7400005FF8 /* MyAFNetWork.m in Sources */,
+				7B022B051D8289C0002BEC02 /* CUUINavigationController.m in Sources */,
 				7BFBC8901D76BB4C00943A67 /* CalendarScrollViewCell.m in Sources */,
 				7BEC0E791D63071F008C3D21 /* UIView+Frame.m in Sources */,
 				7BEC0E731D62DC06008C3D21 /* SLLYMenuView.m in Sources */,
 				7BEC0E701D62B1A9008C3D21 /* SLLYMenuViewController.m in Sources */,
 				7B1DB08F1D77F92100C7C54D /* CellDateModel.m in Sources */,
+				7B022B021D8286FB002BEC02 /* DiaryUnLockViewController.m in Sources */,
 				7B36C9131D61B65B005FC2E1 /* CommonViewController.m in Sources */,
 				7BF9F5EC1D79626200021A71 /* DiaryMenuView.m in Sources */,
+				7B022AF71D825C64002BEC02 /* UIImage+Image.m in Sources */,
 				7BFBC87B1D75314900943A67 /* DiaryModel.m in Sources */,
 				7B1DB0921D7803F000C7C54D /* DateTools.m in Sources */,
 			);

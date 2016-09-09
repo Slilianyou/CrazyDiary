@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CUTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -30,14 +30,14 @@
     PPGViewController *ppGVC = [[PPGViewController alloc]init];
     UINavigationController *ppGNavi = [[UINavigationController alloc]initWithRootViewController:ppGVC];
     
-    DiaryViewController *diaryVC = [[DiaryViewController alloc]init];
-    UINavigationController *diaryNavi = [[UINavigationController alloc]initWithRootViewController:diaryVC];
-    
+//    DiaryViewController *diaryVC = [[DiaryViewController alloc]init];
+//    UINavigationController *diaryNavi = [[UINavigationController alloc]initWithRootViewController:diaryVC];
+    CUTabBarController *tabBar = [[CUTabBarController alloc]init];
     
     
     NSArray *titleArr = @[@"普通",@"健康",@"测心跳",@"日记"];
     SLLYMenuViewController *menuVC = [[SLLYMenuViewController alloc]initWithFrontView:commonNavi andButtonTitleArr:titleArr];
-    menuVC.viewControllersArr = @[commonNavi,healthNavi,ppGNavi,diaryNavi];
+    menuVC.viewControllersArr = @[commonNavi,healthNavi,ppGNavi,tabBar];
     UINavigationController *menuNavi = [[UINavigationController alloc]initWithRootViewController:menuVC];
     
     //
